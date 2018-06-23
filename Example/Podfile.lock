@@ -1,0 +1,16 @@
+PODS:
+  - Tagging (0.1.0)
+
+DEPENDENCIES:
+  - Tagging
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Tagging
+
+SPEC CHECKSUMS:
+  Tagging: bf851643184a255fc184452c8dc52a04a30a4006
+
+PODFILE CHECKSUM: 79d41768636324f1bedba02e7aa1f053d60e7461
+
+COCOAPODS: 1.5.3
