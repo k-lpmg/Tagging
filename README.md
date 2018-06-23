@@ -13,20 +13,20 @@ If you're worried about implementing `Mention` or `Hashtag` in your app, you can
 
 ## Getting Started
 
-1. Add 'Tagging' to the view as a subview.
+1. Add `Tagging` to the view as a subview.
 
-2. Set the list that you want to tag and tag symbol to 'Tagging'.
+2. Set the list that you want to tag and tag symbol to `Tagging`.
 ```swift
 tagging.symbol = "#"
 tagging.tagableList = ["DOOMFIST", "GENJI", "MCCREE", "PHARAH", "REAPER", "SOLDIER: 76", "SOMBRA", "TRACER", "BASTION", "HANZO", "JUNKRAT", "MEI", "TORBJORN", "WIDOWMAKER", "D.VA", "ORISA", "REINHARDT", "ROADHOG", "WINSTON", "ZARYA", "ANA", "BRIGITTE", "LUCIO", "MERCY", "MOIRA", "SYMMETRA", "ZENYATTA"]
 ```
 
-3. Implement TaggingDataSource on the class that added the 'Tagging'.
+3. Implement TaggingDataSource on the class that added the `Tagging`.
 ```swift
 tagging.dataSource = self
 ```
 
-3. Get tagable list and tagged list through TaggingDataSource.
+3. Get tagable list and tagged list through `TaggingDataSource`.
 ```swift
 func tagging(_ tagging: Tagging, didChangedTagableList tagableList: [String]) {
     matchedList = tagableList
