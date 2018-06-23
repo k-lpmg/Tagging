@@ -36,12 +36,18 @@ class TaggingViewController: UIViewController {
     
     @IBOutlet weak var tagging: Tagging! {
         didSet {
-            tagging.layer.borderColor = UIColor.darkGray.cgColor
-            tagging.layer.borderWidth = 1.0
-            tagging.backgroundColor = .lightGray
+            tagging.borderColor = UIColor.darkGray.cgColor
+            tagging.borderWidth = 1.0
+            tagging.cornerRadius = 20
+            tagging.textInset = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
+            tagging.backgroundColor = UIColor.lightGray.withAlphaComponent(0.5)
+            tagging.defaultAttributes = [NSAttributedStringKey.foregroundColor: UIColor.black, NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 20)]
+            tagging.symbolAttributes = [NSAttributedStringKey.foregroundColor: UIColor.gray]
+            tagging.taggedAttributes = [NSAttributedStringKey.foregroundColor: UIColor.gray, NSAttributedStringKey.underlineStyle: NSNumber(value: 1)]
+            tagging.dataSource = self
+            
             tagging.symbol = "#"
             tagging.tagableList = ["DOOMFIST", "GENJI", "MCCREE", "PHARAH", "REAPER", "SOLDIER: 76", "SOMBRA", "TRACER", "BASTION", "HANZO", "JUNKRAT", "MEI", "TORBJORN", "WIDOWMAKER", "D.VA", "ORISA", "REINHARDT", "ROADHOG", "WINSTON", "ZARYA", "ANA", "BRIGITTE", "LUCIO", "MERCY", "MOIRA", "SYMMETRA", "ZENYATTA"]
-            tagging.dataSource = self
         }
     }
     @IBOutlet weak var tagableTableView: UITableView! {

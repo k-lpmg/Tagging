@@ -3,5 +3,5 @@
 use_frameworks!
 
 target 'TaggingExample' do
-	pod 'Tagging'
+	pod 'Tagging', :path => '../'
 end

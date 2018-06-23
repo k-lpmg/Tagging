@@ -2,15 +2,15 @@ PODS:
   - Tagging (0.1.0)
 
 DEPENDENCIES:
-  - Tagging
+  - Tagging (from `../`)
 
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - Tagging
+EXTERNAL SOURCES:
+  Tagging:
+    :path: "../"
 
 SPEC CHECKSUMS:
-  Tagging: bf851643184a255fc184452c8dc52a04a30a4006
+  Tagging: e6c944c46e94e23fdfcc81b0a6391b27c030f517
 
-PODFILE CHECKSUM: 79d41768636324f1bedba02e7aa1f053d60e7461
+PODFILE CHECKSUM: 764420404bd99234dfe3a64d6c1cb79c548c67a6
 
 COCOAPODS: 1.5.3
