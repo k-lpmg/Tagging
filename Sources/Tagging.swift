@@ -9,14 +9,53 @@
 import UIKit
 import Foundation
 
-public protocol TaggingDataSource: NSObjectProtocol {
-    func tagging(_ tagging: Tagging, didChangedTagableList tagableList: [String])
-    func tagging(_ tagging: Tagging, didChangedTaggedList taggedList: [TaggingModel])
-}
-
 open class Tagging: UIView {
     
+    // MARK: - Apperance
+    
+    open var cornerRadius: CGFloat {
+        get { return textView.layer.cornerRadius }
+        set { textView.layer.cornerRadius = newValue }
+    }
+    
+    open var borderWidth: CGFloat {
+        get { return textView.layer.borderWidth }
+        set { textView.layer.borderWidth = newValue }
+    }
+    
+    open var borderColor: CGColor? {
+        get { return textView.layer.borderColor }
+        set { textView.layer.borderColor = newValue }
+    }
+    
+    open var textInset: UIEdgeInsets {
+        get { return textView.textContainerInset }
+        set { textView.textContainerInset = newValue }
+    }
+    
+    override open var backgroundColor: UIColor? {
+        get { return textView.backgroundColor }
+        set { textView.backgroundColor = newValue }
+    }
+    
     // MARK: - Properties
+    
+    open var symbol: String = "@"
+    open var tagableList: [String]?
+    open var defaultAttributes: [NSAttributedStringKey: Any] = {
+        return [NSAttributedStringKey.foregroundColor: UIColor.black,
+                NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 15),
+                NSAttributedStringKey.underlineStyle: NSNumber(value: 0)]
+    }()
+    open var symbolAttributes: [NSAttributedStringKey: Any] = {
+        return [NSAttributedStringKey.foregroundColor: UIColor.black,
+                NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 15),
+                NSAttributedStringKey.underlineStyle: NSNumber(value: 0)]
+    }()
+    open var taggedAttributes: [NSAttributedStringKey: Any] = {return [NSAttributedStringKey.underlineStyle: NSNumber(value: 1)]}()
+    
+    public private(set) var taggedList: [TaggingModel] = []
+    public weak var dataSource: TaggingDataSource?
     
     private var currentTaggingText: String? {
         didSet {
@@ -29,22 +68,6 @@ open class Tagging: UIView {
     }
     private var currentTaggingRange: NSRange?
     private var tagRegex: NSRegularExpression! {return try! NSRegularExpression(pattern: "\(symbol)([^\\s\\K]+)")}
-    
-    public private(set) var taggedList: [TaggingModel] = []
-    public weak var dataSource: TaggingDataSource?
-    
-    open var symbol: String = "@"
-    open var tagableList: [String]?
-    open var defaultAttributes: [NSAttributedStringKey: Any] = {
-        let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.alignment = .left
-        
-        return [NSAttributedStringKey.foregroundColor: UIColor.black,
-                NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 15),
-                NSAttributedStringKey.paragraphStyle: paragraphStyle,
-                NSAttributedStringKey.underlineStyle: NSNumber(value: 0)]
-    }()
-    open var taggedAttributes: [NSAttributedStringKey: Any] = {return [NSAttributedStringKey.underlineStyle: NSNumber(value: 1)]}()
     
     // MARK: - UI Components
     
@@ -103,6 +126,7 @@ open class Tagging: UIView {
     }
     
     private func setProperties() {
+        backgroundColor = .clear
         textView.delegate = self
     }
     
@@ -205,8 +229,11 @@ extension Tagging {
         let attributedString = NSMutableAttributedString(string: textView.text)
         attributedString.addAttributes(defaultAttributes, range: NSMakeRange(0, textView.text.utf16.count))
         taggedList.forEach { (model) in
-            let underLineRange = NSMakeRange(model.range.location+1, model.range.length-1)
-            attributedString.addAttributes(taggedAttributes, range: underLineRange)
+            let symbolAttributesRange = NSMakeRange(model.range.location, symbol.count)
+            let taggedAttributesRange = NSMakeRange(model.range.location+1, model.range.length-1)
+            
+            attributedString.addAttributes(symbolAttributes, range: symbolAttributesRange)
+            attributedString.addAttributes(taggedAttributes, range: taggedAttributesRange)
         }
         
         textView.attributedText = attributedString
