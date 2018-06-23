@@ -60,7 +60,7 @@ func tagging(_ tagging: Tagging, didChangedTaggedList taggedList: [TaggingModel]
 
 #### CocoaPods (iOS 8+)
 
-You can use [CocoaPods](http://cocoapods.org/) to install `RealmWrapper` by adding it to your `Podfile`:
+You can use [CocoaPods](http://cocoapods.org/) to install `Tagging` by adding it to your `Podfile`:
 
 ```ruby
 platform :ios, '8.0'
