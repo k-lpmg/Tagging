@@ -64,8 +64,6 @@ func tagging(_ tagging: Tagging, didChangedTaggedList taggedList: [TaggingModel]
 
 #### CocoaPods (iOS 8+)
 
-You can use [CocoaPods](http://cocoapods.org/) to install `Tagging` by adding it to your `Podfile`:
-
 ```ruby
 platform :ios, '8.0'
 use_frameworks!
@@ -73,6 +71,12 @@ use_frameworks!
 target 'MyApp' do
 pod 'Tagging'
 end
+```
+
+### Carthage (iOS 8+)
+
+```ruby
+github "k-lpmg/Tagging"
 ```
 
 
