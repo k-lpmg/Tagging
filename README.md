@@ -8,7 +8,7 @@
 [Tagging](https://github.com/k-lpmg/Tagging) is a UIView that encloses a TextView that contains an algorithm for tagging.
 If you're worried about implementing `Mention` or `Hashtag` in your app, you can easily implement them using the library.
 
-![SinglePhoto](https://github.com/k-lpmg/Tagging/blob/master/Images/TaggingToOverwatchHero.gif)
+![taggingtooverwatchhero](https://user-images.githubusercontent.com/15151687/42734216-23087396-887b-11e8-9ad9-16975de922c8.gif)
 
 
 ## Getting Started
