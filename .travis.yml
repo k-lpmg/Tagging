@@ -3,7 +3,7 @@ language: objective-c
 env:
   global:
     - PROJECT="Tagging.xcodeproj"
-    - SCHEME="Tagging"
+    - SCHEME="TaggingExample"
     - IOS_SDK="iphonesimulator"
   matrix:
     - SDK="$IOS_SDK"  DESTINATION="platform=iOS Simulator,name=iPhone 8,OS=11.4"
