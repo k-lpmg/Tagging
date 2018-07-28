@@ -5,7 +5,7 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](https://raw.githubusercontent.com/k-lpmg/RealmWrapper/master/LICENSE)
 [![Build Status](https://travis-ci.org/k-lpmg/Tagging.svg?branch=master)](https://travis-ci.org/k-lpmg/Tagging)
 
-✍️ TextView that provides a tagging feature to Mention or Hashtag.
+✍️ TextView that provides easy to use tagging feature for Mention or Hashtag.
 
 
 ## Introduction
