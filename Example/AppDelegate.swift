@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  TaggingExample
-//
-//  Created by DongHeeKang on 2018. 7. 2..
-//  Copyright © 2018년 k-lpmg. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
