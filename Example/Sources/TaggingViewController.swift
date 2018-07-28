@@ -36,6 +36,8 @@ class TaggingViewController: UIViewController {
     
     @IBOutlet weak var tagging: Tagging! {
         didSet {
+            tagging.accessibilityIdentifier = "Tagging"
+            tagging.textView.accessibilityIdentifier = "TaggingTextView"
             tagging.borderColor = UIColor.darkGray.cgColor
             tagging.borderWidth = 1.0
             tagging.cornerRadius = 20
@@ -47,11 +49,12 @@ class TaggingViewController: UIViewController {
             tagging.dataSource = self
             
             tagging.symbol = "#"
-            tagging.tagableList = ["DOOMFIST", "GENJI", "MCCREE", "PHARAH", "REAPER", "SOLDIER: 76", "SOMBRA", "TRACER", "BASTION", "HANZO", "JUNKRAT", "MEI", "TORBJORN", "WIDOWMAKER", "D.VA", "ORISA", "REINHARDT", "ROADHOG", "WINSTON", "ZARYA", "ANA", "BRIGITTE", "LUCIO", "MERCY", "MOIRA", "SYMMETRA", "ZENYATTA"]
+            tagging.tagableList = ["DOOMFIST", "GENJI", "MCCREE", "PHARAH", "REAPER", "SOLDIER:76", "SOMBRA", "TRACER", "BASTION", "HANZO", "JUNKRAT", "MEI", "TORBJORN", "WIDOWMAKER", "D.VA", "ORISA", "REINHARDT", "ROADHOG", "WINSTON", "ZARYA", "ANA", "BRIGITTE", "LUCIO", "MERCY", "MOIRA", "SYMMETRA", "ZENYATTA"]
         }
     }
     @IBOutlet weak var tagableTableView: UITableView! {
         didSet {
+            tagableTableView.accessibilityIdentifier = "TagableTableView"
             tagableTableView.dataSource = self
             tagableTableView.delegate = self
             tagableTableView.register(UITableViewCell.self, forCellReuseIdentifier: Const.tagableTableViewCell)
@@ -59,6 +62,7 @@ class TaggingViewController: UIViewController {
     }
     @IBOutlet weak var taggedTableView: UITableView! {
         didSet {
+            taggedTableView.accessibilityIdentifier = "TaggedTableView"
             taggedTableView.allowsSelection = false
             taggedTableView.dataSource = self
             taggedTableView.register(UITableViewCell.self, forCellReuseIdentifier: Const.taggedTableViewCell)

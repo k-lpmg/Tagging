@@ -9,11 +9,8 @@
 /* Begin PBXBuildFile section */
 		6523AB9620FB7CF300AA0252 /* TaggingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6523AB9520FB7CF300AA0252 /* TaggingViewController.swift */; };
 		6523AB9820FB7D2D00AA0252 /* Tagging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6583BE0020E951250047896D /* Tagging.framework */; };
-		6583BE0A20E951250047896D /* Tagging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6583BE0020E951250047896D /* Tagging.framework */; };
 		6583BE2620E9516C0047896D /* Tagging.h in Headers */ = {isa = PBXBuildFile; fileRef = 6583BE2120E9516C0047896D /* Tagging.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6583BE2720E9516C0047896D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6583BE2220E9516C0047896D /* Info.plist */; };
-		6583BE2F20E952740047896D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6583BE2B20E951CD0047896D /* Info.plist */; };
-		6583BE3020E9534D0047896D /* TaggingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6583BE2A20E951CD0047896D /* TaggingTests.swift */; };
 		65854A5A20E9574800124501 /* TaggingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65854A5720E9574800124501 /* TaggingModel.swift */; };
 		65854A5B20E9574800124501 /* Tagging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65854A5820E9574800124501 /* Tagging.swift */; };
 		65854A5C20E9574800124501 /* TaggingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65854A5920E9574800124501 /* TaggingDataSource.swift */; };
@@ -22,10 +19,21 @@
 		65854A8F20E9596800124501 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65854A8920E9596800124501 /* LaunchScreen.storyboard */; };
 		65854A9020E9596800124501 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65854A8B20E9596800124501 /* Main.storyboard */; };
 		65854A9120E9596800124501 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 65854A8D20E9596800124501 /* Info.plist */; };
+		65B08B0020FD6DE800D19DE8 /* TaggingExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B08AFE20FD6DE800D19DE8 /* TaggingExampleUITests.swift */; };
+		65B08B0120FD6DE800D19DE8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 65B08AFF20FD6DE800D19DE8 /* Info.plist */; };
+		65E42F8D20FD6C3000175C45 /* Tagging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6583BE0020E951250047896D /* Tagging.framework */; };
+		65E42F8E20FD6C3000175C45 /* Tagging.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6583BE0020E951250047896D /* Tagging.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6583BE0B20E951250047896D /* PBXContainerItemProxy */ = {
+		6560591220FD6DA300A3BBCD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6583BDF720E951250047896D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65854A6020E9578100124501;
+			remoteInfo = TaggingExample;
+		};
+		65E42F8F20FD6C3000175C45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6583BDF720E951250047896D /* Project object */;
 			proxyType = 1;
@@ -34,14 +42,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		65E42F9120FD6C3000175C45 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				65E42F8E20FD6C3000175C45 /* Tagging.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		6523AB9520FB7CF300AA0252 /* TaggingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaggingViewController.swift; sourceTree = "<group>"; };
+		6560590D20FD6DA300A3BBCD /* TaggingExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaggingExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6583BE0020E951250047896D /* Tagging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tagging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6583BE0920E951250047896D /* TaggingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaggingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6583BE2120E9516C0047896D /* Tagging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tagging.h; sourceTree = "<group>"; };
 		6583BE2220E9516C0047896D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6583BE2A20E951CD0047896D /* TaggingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaggingTests.swift; sourceTree = "<group>"; };
-		6583BE2B20E951CD0047896D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65854A5720E9574800124501 /* TaggingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaggingModel.swift; sourceTree = "<group>"; };
 		65854A5820E9574800124501 /* Tagging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tagging.swift; sourceTree = "<group>"; };
 		65854A5920E9574800124501 /* TaggingDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaggingDataSource.swift; sourceTree = "<group>"; };
@@ -51,9 +71,18 @@
 		65854A8A20E9596800124501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65854A8C20E9596800124501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65854A8D20E9596800124501 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65B08AFE20FD6DE800D19DE8 /* TaggingExampleUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaggingExampleUITests.swift; sourceTree = "<group>"; };
+		65B08AFF20FD6DE800D19DE8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6560590A20FD6DA300A3BBCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6583BDFC20E951250047896D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -61,18 +90,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6583BE0620E951250047896D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6583BE0A20E951250047896D /* Tagging.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		65854A5E20E9578100124501 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65E42F8D20FD6C3000175C45 /* Tagging.framework in Frameworks */,
 				6523AB9820FB7D2D00AA0252 /* Tagging.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,9 +114,9 @@
 			children = (
 				6583BE1E20E9516C0047896D /* Sources */,
 				65854A7320E957A300124501 /* Example */,
-				6583BE2920E951CD0047896D /* Tests */,
-				6583BE0120E951250047896D /* Products */,
+				65B08AFD20FD6DE800D19DE8 /* UITests */,
 				6523AB9720FB7D2D00AA0252 /* Frameworks */,
+				6583BE0120E951250047896D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,8 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				6583BE0020E951250047896D /* Tagging.framework */,
-				6583BE0920E951250047896D /* TaggingTests.xctest */,
 				65854A6120E9578100124501 /* TaggingExample.app */,
+				6560590D20FD6DA300A3BBCD /* TaggingExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,15 +140,6 @@
 				65854A5720E9574800124501 /* TaggingModel.swift */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		6583BE2920E951CD0047896D /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				6583BE2A20E951CD0047896D /* TaggingTests.swift */,
-				6583BE2B20E951CD0047896D /* Info.plist */,
-			);
-			path = Tests;
 			sourceTree = "<group>";
 		};
 		65854A7320E957A300124501 /* Example */ = {
@@ -158,6 +171,15 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
+		65B08AFD20FD6DE800D19DE8 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				65B08AFE20FD6DE800D19DE8 /* TaggingExampleUITests.swift */,
+				65B08AFF20FD6DE800D19DE8 /* Info.plist */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -172,6 +194,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		6560590C20FD6DA300A3BBCD /* TaggingExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6560591620FD6DA300A3BBCD /* Build configuration list for PBXNativeTarget "TaggingExampleUITests" */;
+			buildPhases = (
+				6560590920FD6DA300A3BBCD /* Sources */,
+				6560590A20FD6DA300A3BBCD /* Frameworks */,
+				6560590B20FD6DA300A3BBCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6560591320FD6DA300A3BBCD /* PBXTargetDependency */,
+			);
+			name = TaggingExampleUITests;
+			productName = TaggingExampleUITests;
+			productReference = 6560590D20FD6DA300A3BBCD /* TaggingExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		6583BDFF20E951250047896D /* Tagging */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6583BE1420E951250047896D /* Build configuration list for PBXNativeTarget "Tagging" */;
@@ -190,24 +230,6 @@
 			productReference = 6583BE0020E951250047896D /* Tagging.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		6583BE0820E951250047896D /* TaggingTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6583BE1720E951250047896D /* Build configuration list for PBXNativeTarget "TaggingTests" */;
-			buildPhases = (
-				6583BE0520E951250047896D /* Sources */,
-				6583BE0620E951250047896D /* Frameworks */,
-				6583BE0720E951250047896D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6583BE0C20E951250047896D /* PBXTargetDependency */,
-			);
-			name = TaggingTests;
-			productName = TaggingTests;
-			productReference = 6583BE0920E951250047896D /* TaggingTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		65854A6020E9578100124501 /* TaggingExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65854A7020E9578200124501 /* Build configuration list for PBXNativeTarget "TaggingExample" */;
@@ -215,10 +237,12 @@
 				65854A5D20E9578100124501 /* Sources */,
 				65854A5E20E9578100124501 /* Frameworks */,
 				65854A5F20E9578100124501 /* Resources */,
+				65E42F9120FD6C3000175C45 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				65E42F9020FD6C3000175C45 /* PBXTargetDependency */,
 			);
 			name = TaggingExample;
 			productName = TaggingExample;
@@ -235,12 +259,13 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "k-lpmg";
 				TargetAttributes = {
+					6560590C20FD6DA300A3BBCD = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 65854A6020E9578100124501;
+					};
 					6583BDFF20E951250047896D = {
 						CreatedOnToolsVersion = 9.4;
 						LastSwiftMigration = 0940;
-					};
-					6583BE0820E951250047896D = {
-						CreatedOnToolsVersion = 9.4;
 					};
 					65854A6020E9578100124501 = {
 						CreatedOnToolsVersion = 9.4;
@@ -263,25 +288,25 @@
 			targets = (
 				6583BDFF20E951250047896D /* Tagging */,
 				65854A6020E9578100124501 /* TaggingExample */,
-				6583BE0820E951250047896D /* TaggingTests */,
+				6560590C20FD6DA300A3BBCD /* TaggingExampleUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6560590B20FD6DA300A3BBCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65B08B0120FD6DE800D19DE8 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6583BDFE20E951250047896D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6583BE2720E9516C0047896D /* Info.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6583BE0720E951250047896D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6583BE2F20E952740047896D /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +324,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6560590920FD6DA300A3BBCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65B08B0020FD6DE800D19DE8 /* TaggingExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6583BDFB20E951250047896D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -306,14 +339,6 @@
 				65854A5C20E9574800124501 /* TaggingDataSource.swift in Sources */,
 				65854A5A20E9574800124501 /* TaggingModel.swift in Sources */,
 				65854A5B20E9574800124501 /* Tagging.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6583BE0520E951250047896D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6583BE3020E9534D0047896D /* TaggingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,10 +354,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6583BE0C20E951250047896D /* PBXTargetDependency */ = {
+		6560591320FD6DA300A3BBCD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65854A6020E9578100124501 /* TaggingExample */;
+			targetProxy = 6560591220FD6DA300A3BBCD /* PBXContainerItemProxy */;
+		};
+		65E42F9020FD6C3000175C45 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6583BDFF20E951250047896D /* Tagging */;
-			targetProxy = 6583BE0B20E951250047896D /* PBXContainerItemProxy */;
+			targetProxy = 65E42F8F20FD6C3000175C45 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -356,6 +386,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6560591420FD6DA300A3BBCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "k-lpmg.TaggingExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TaggingExample;
+			};
+			name = Debug;
+		};
+		6560591520FD6DA300A3BBCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "k-lpmg.TaggingExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TaggingExample;
+			};
+			name = Release;
+		};
 		6583BE1220E951250047896D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -531,51 +605,10 @@
 			};
 			name = Release;
 		};
-		6583BE1820E951250047896D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "k-lpmg.TaggingTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		6583BE1920E951250047896D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "k-lpmg.TaggingTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		65854A7120E9578200124501 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -599,6 +632,7 @@
 		65854A7220E9578200124501 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -621,6 +655,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6560591620FD6DA300A3BBCD /* Build configuration list for PBXNativeTarget "TaggingExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6560591420FD6DA300A3BBCD /* Debug */,
+				6560591520FD6DA300A3BBCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6583BDFA20E951250047896D /* Build configuration list for PBXProject "Tagging" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -635,15 +678,6 @@
 			buildConfigurations = (
 				6583BE1520E951250047896D /* Debug */,
 				6583BE1620E951250047896D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6583BE1720E951250047896D /* Build configuration list for PBXNativeTarget "TaggingTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6583BE1820E951250047896D /* Debug */,
-				6583BE1920E951250047896D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
