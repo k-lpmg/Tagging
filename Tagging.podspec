@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Tagging"
-  s.version      = "0.2.3"
+  s.version      = "0.3.0"
   s.summary      = "TextView that provides a tagging feature to Mention or Hashtag"
   s.homepage     = "https://github.com/k-lpmg/Tagging"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
