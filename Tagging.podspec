@@ -8,6 +8,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/k-lpmg/Tagging.git", :tag => s.version.to_s }
   s.documentation_url = "https://github.com/k-lpmg/Tagging/blob/master/README.md"
 
-  s.ios.source_files  = "Sources/*.swift"
+  s.ios.source_files  = "Sources/**/*.swift"
   s.ios.deployment_target = "8.0"
 end
