@@ -114,7 +114,7 @@
 			children = (
 				6583BE1E20E9516C0047896D /* Sources */,
 				65854A7320E957A300124501 /* Example */,
-				65B08AFD20FD6DE800D19DE8 /* UITests */,
+				65B08AFD20FD6DE800D19DE8 /* Tests */,
 				6523AB9720FB7D2D00AA0252 /* Frameworks */,
 				6583BE0120E951250047896D /* Products */,
 			);
@@ -171,13 +171,13 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
-		65B08AFD20FD6DE800D19DE8 /* UITests */ = {
+		65B08AFD20FD6DE800D19DE8 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				65B08AFE20FD6DE800D19DE8 /* TaggingExampleUITests.swift */,
 				65B08AFF20FD6DE800D19DE8 /* Info.plist */,
 			);
-			path = UITests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -392,7 +392,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = UITests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -414,7 +414,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = UITests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
