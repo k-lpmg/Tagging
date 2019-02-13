@@ -34,17 +34,17 @@ open class Tagging: UIView {
     
     open var symbol: String = "@"
     open var tagableList: [String]?
-    open var defaultAttributes: [NSAttributedStringKey: Any] = {
-        return [NSAttributedStringKey.foregroundColor: UIColor.black,
-                NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 15),
-                NSAttributedStringKey.underlineStyle: NSNumber(value: 0)]
+    open var defaultAttributes: [NSAttributedString.Key: Any] = {
+        return [NSAttributedString.Key.foregroundColor: UIColor.black,
+                NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 15),
+                NSAttributedString.Key.underlineStyle: NSNumber(value: 0)]
     }()
-    open var symbolAttributes: [NSAttributedStringKey: Any] = {
-        return [NSAttributedStringKey.foregroundColor: UIColor.black,
-                NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 15),
-                NSAttributedStringKey.underlineStyle: NSNumber(value: 0)]
+    open var symbolAttributes: [NSAttributedString.Key: Any] = {
+        return [NSAttributedString.Key.foregroundColor: UIColor.black,
+                NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 15),
+                NSAttributedString.Key.underlineStyle: NSNumber(value: 0)]
     }()
-    open var taggedAttributes: [NSAttributedStringKey: Any] = {return [NSAttributedStringKey.underlineStyle: NSNumber(value: 1)]}()
+    open var taggedAttributes: [NSAttributedString.Key: Any] = {return [NSAttributedString.Key.underlineStyle: NSNumber(value: 1)]}()
     
     public private(set) var taggedList: [TaggingModel] = []
     public weak var dataSource: TaggingDataSource?
@@ -63,7 +63,7 @@ open class Tagging: UIView {
     
     // MARK: - UI Components
     
-    open let textView: UITextView = {
+    public let textView: UITextView = {
         let textView = UITextView()
         textView.translatesAutoresizingMaskIntoConstraints = false
         return textView

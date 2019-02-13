@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6523AB9620FB7CF300AA0252 /* TaggingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6523AB9520FB7CF300AA0252 /* TaggingViewController.swift */; };
-		6523AB9820FB7D2D00AA0252 /* Tagging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6583BE0020E951250047896D /* Tagging.framework */; };
 		656201E42122559A000E209D /* TaggingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656201DF21225599000E209D /* TaggingModel.swift */; };
-		656201E52122559A000E209D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 656201E021225599000E209D /* Info.plist */; };
 		656201E62122559A000E209D /* Tagging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656201E121225599000E209D /* Tagging.swift */; };
 		656201E72122559A000E209D /* TaggingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656201E22122559A000E209D /* TaggingDataSource.swift */; };
 		656201E8212255E5000E209D /* Tagging.h in Headers */ = {isa = PBXBuildFile; fileRef = 656201DE21225599000E209D /* Tagging.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -18,9 +16,7 @@
 		65854A8E20E9596800124501 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65854A8820E9596800124501 /* Assets.xcassets */; };
 		65854A8F20E9596800124501 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65854A8920E9596800124501 /* LaunchScreen.storyboard */; };
 		65854A9020E9596800124501 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65854A8B20E9596800124501 /* Main.storyboard */; };
-		65854A9120E9596800124501 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 65854A8D20E9596800124501 /* Info.plist */; };
 		65B08B0020FD6DE800D19DE8 /* TaggingExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B08AFE20FD6DE800D19DE8 /* TaggingExampleUITests.swift */; };
-		65B08B0120FD6DE800D19DE8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 65B08AFF20FD6DE800D19DE8 /* Info.plist */; };
 		65E42F8D20FD6C3000175C45 /* Tagging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6583BE0020E951250047896D /* Tagging.framework */; };
 		65E42F8E20FD6C3000175C45 /* Tagging.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6583BE0020E951250047896D /* Tagging.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -59,9 +55,9 @@
 /* Begin PBXFileReference section */
 		6523AB9520FB7CF300AA0252 /* TaggingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaggingViewController.swift; sourceTree = "<group>"; };
 		6560590D20FD6DA300A3BBCD /* TaggingExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaggingExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		656201DE21225599000E209D /* Tagging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tagging.h; path = Tagging/Tagging.h; sourceTree = "<group>"; };
+		656201DE21225599000E209D /* Tagging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tagging.h; sourceTree = "<group>"; };
 		656201DF21225599000E209D /* TaggingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaggingModel.swift; path = Tagging/TaggingModel.swift; sourceTree = "<group>"; };
-		656201E021225599000E209D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Tagging/Info.plist; sourceTree = "<group>"; };
+		656201E021225599000E209D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		656201E121225599000E209D /* Tagging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tagging.swift; path = Tagging/Tagging.swift; sourceTree = "<group>"; };
 		656201E22122559A000E209D /* TaggingDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaggingDataSource.swift; path = Tagging/TaggingDataSource.swift; sourceTree = "<group>"; };
 		6583BE0020E951250047896D /* Tagging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tagging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,7 +91,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				65E42F8D20FD6C3000175C45 /* Tagging.framework in Frameworks */,
-				6523AB9820FB7D2D00AA0252 /* Tagging.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,9 +107,11 @@
 		6583BDF620E951250047896D = {
 			isa = PBXGroup;
 			children = (
+				656201DE21225599000E209D /* Tagging.h */,
+				656201E021225599000E209D /* Info.plist */,
 				6583BE1E20E9516C0047896D /* Sources */,
-				65854A7320E957A300124501 /* Example */,
 				65B08AFD20FD6DE800D19DE8 /* Tests */,
+				65854A7320E957A300124501 /* Example */,
 				6523AB9720FB7D2D00AA0252 /* Frameworks */,
 				6583BE0120E951250047896D /* Products */,
 			);
@@ -133,8 +130,6 @@
 		6583BE1E20E9516C0047896D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				656201E021225599000E209D /* Info.plist */,
-				656201DE21225599000E209D /* Tagging.h */,
 				656201E121225599000E209D /* Tagging.swift */,
 				656201E22122559A000E209D /* TaggingDataSource.swift */,
 				656201DF21225599000E209D /* TaggingModel.swift */,
@@ -256,7 +251,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "k-lpmg";
 				TargetAttributes = {
 					6560590C20FD6DA300A3BBCD = {
@@ -298,7 +293,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65B08B0120FD6DE800D19DE8 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +300,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				656201E52122559A000E209D /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +307,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65854A9120E9596800124501 /* Info.plist in Resources */,
 				65854A9020E9596800124501 /* Main.storyboard in Resources */,
 				65854A8E20E9596800124501 /* Assets.xcassets in Resources */,
 				65854A8F20E9596800124501 /* LaunchScreen.storyboard in Resources */,
@@ -561,7 +553,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Tagging/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -573,7 +565,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -589,7 +581,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Tagging/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -600,7 +592,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
