@@ -92,7 +92,7 @@ open class Tagging: UIView {
         let tag = tagFormat(tagText)
         let replace = tag.appending(" ")
         let changed = (allText as NSString).replacingCharacters(in: range, with: replace)
-        let tagRange = NSMakeRange(range.location, tag.count)
+        let tagRange = NSMakeRange(range.location, tag.utf16.count)
         
         taggedList.append(TaggingModel(text: tagText, range: tagRange))
         for i in 0..<taggedList.count-1 {
