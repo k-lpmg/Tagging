@@ -68,8 +68,8 @@ func tagging(_ tagging: Tagging, didChangedTaggedList taggedList: [TaggingModel]
 platform :ios, '8.0'
 use_frameworks!
 
-target 'MyApp' do
-pod 'Tagging'
+target '<Your Target Name>' do
+    pod 'Tagging'
 end
 ```
 
