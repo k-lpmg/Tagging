@@ -1,6 +1,6 @@
 # Tagging
 [![Build Status](https://travis-ci.org/k-lpmg/Tagging.svg?branch=master)](https://travis-ci.org/k-lpmg/Tagging)
-![Swift](https://img.shields.io/badge/Swift-4.2-orange.svg)
+![Swift](https://img.shields.io/badge/Swift-5.0-orange.svg)
 [![Cocoapods](https://img.shields.io/cocoapods/v/Tagging.svg?style=flat)](https://cocoapods.org/pods/Tagging)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 

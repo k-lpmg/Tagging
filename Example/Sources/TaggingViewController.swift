@@ -35,9 +35,9 @@ class TaggingViewController: UIViewController {
             tagging.cornerRadius = 20
             tagging.textInset = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
             tagging.backgroundColor = UIColor.lightGray.withAlphaComponent(0.1)
-            tagging.defaultAttributes = [NSAttributedStringKey.foregroundColor: UIColor.black, NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 20)]
-            tagging.symbolAttributes = [NSAttributedStringKey.foregroundColor: UIColor.gray]
-            tagging.taggedAttributes = [NSAttributedStringKey.foregroundColor: UIColor.gray, NSAttributedStringKey.underlineStyle: NSNumber(value: 1)]
+            tagging.defaultAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black, NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 20)]
+            tagging.symbolAttributes = [NSAttributedString.Key.foregroundColor: UIColor.gray]
+            tagging.taggedAttributes = [NSAttributedString.Key.foregroundColor: UIColor.gray, NSAttributedString.Key.underlineStyle: NSNumber(value: 1)]
             tagging.dataSource = self
             
             tagging.symbol = "#"
