@@ -1,9 +1,8 @@
 # Tagging
+[![Build Status](https://travis-ci.org/k-lpmg/Tagging.svg?branch=master)](https://travis-ci.org/k-lpmg/Tagging)
+![Swift](https://img.shields.io/badge/Swift-4.2-orange.svg)
 [![Cocoapods](https://img.shields.io/cocoapods/v/Tagging.svg?style=flat)](https://cocoapods.org/pods/Tagging)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-![Swift](https://img.shields.io/badge/Swift-4.2-orange.svg)
-[![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](https://raw.githubusercontent.com/k-lpmg/RealmWrapper/master/LICENSE)
-[![Build Status](https://travis-ci.org/k-lpmg/Tagging.svg?branch=master)](https://travis-ci.org/k-lpmg/Tagging)
 
 TextView that provides easy to use tagging feature for Mention or Hashtag.
 
