@@ -4,7 +4,7 @@
 [![Cocoapods](https://img.shields.io/cocoapods/v/Tagging.svg?style=flat)](https://cocoapods.org/pods/Tagging)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-TextView that provides easy to use tagging feature for Mention or Hashtag.
+A textView that provides easy to use tagging feature for Mention or Hashtag.
 
 
 ## Introduction
