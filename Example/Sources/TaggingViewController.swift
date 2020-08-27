@@ -36,8 +36,8 @@ class TaggingViewController: UIViewController {
             tagging.textInset = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
             tagging.backgroundColor = UIColor.lightGray.withAlphaComponent(0.1)
             tagging.defaultAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black, NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 20)]
-            tagging.symbolAttributes = [NSAttributedString.Key.foregroundColor: UIColor.gray]
-            tagging.taggedAttributes = [NSAttributedString.Key.foregroundColor: UIColor.gray, NSAttributedString.Key.underlineStyle: NSNumber(value: 1)]
+            tagging.defaultSymbolAttributes = [NSAttributedString.Key.foregroundColor: UIColor.gray]
+            tagging.defaultTaggedAttributes = [NSAttributedString.Key.foregroundColor: UIColor.gray, NSAttributedString.Key.underlineStyle: NSNumber(value: 1)]
             tagging.dataSource = self
             
             tagging.symbol = "#"
@@ -120,7 +120,8 @@ extension TaggingViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard tableView == tagableTableView else {return}
         
-        tagging.updateTaggedList(allText: tagging.textView.text, tagText: matchedList[indexPath.row])
+        let randomColor = UIColor(red: CGFloat.random(in: 0...1), green: CGFloat.random(in: 0...1), blue: CGFloat.random(in: 0...1), alpha: 1)
+        tagging.updateTaggedList(allText: tagging.textView.text, tagText: matchedList[indexPath.row], tagAttribute: [NSAttributedString.Key.foregroundColor: randomColor], symbolAttribute: [NSAttributedString.Key.foregroundColor: randomColor])
         tableView.deselectRow(at: indexPath, animated: true)
     }
     

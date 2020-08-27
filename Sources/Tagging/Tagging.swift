@@ -39,12 +39,12 @@ open class Tagging: UIView {
                 NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 15),
                 NSAttributedString.Key.underlineStyle: NSNumber(value: 0)]
     }()
-    open var symbolAttributes: [NSAttributedString.Key: Any] = {
+    open var defaultSymbolAttributes: [NSAttributedString.Key: Any] = {
         return [NSAttributedString.Key.foregroundColor: UIColor.black,
                 NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 15),
                 NSAttributedString.Key.underlineStyle: NSNumber(value: 0)]
     }()
-    open var taggedAttributes: [NSAttributedString.Key: Any] = {return [NSAttributedString.Key.underlineStyle: NSNumber(value: 1)]}()
+    open var defaultTaggedAttributes: [NSAttributedString.Key: Any] = {return [NSAttributedString.Key.underlineStyle: NSNumber(value: 1)]}()
     
     public private(set) var taggedList: [TaggingModel] = []
     public weak var dataSource: TaggingDataSource?
@@ -85,7 +85,7 @@ open class Tagging: UIView {
     
     // MARK: - Public methods
     
-    public func updateTaggedList(allText: String, tagText: String) {
+    public func updateTaggedList(allText: String, tagText: String, tagAttribute: [NSAttributedString.Key: Any] = Tagging().defaultTaggedAttributes, symbolAttribute: [NSAttributedString.Key: Any] = Tagging().defaultSymbolAttributes) {
         guard let range = currentTaggingRange else {return}
         
         let origin = (allText as NSString).substring(with: range)
@@ -94,7 +94,7 @@ open class Tagging: UIView {
         let changed = (allText as NSString).replacingCharacters(in: range, with: replace)
         let tagRange = NSMakeRange(range.location, tag.utf16.count)
         
-        taggedList.append(TaggingModel(text: tagText, range: tagRange))
+        taggedList.append(TaggingModel(text: tagText, range: tagRange, attribute: tagAttribute, symbolAttribute: symbolAttribute))
         for i in 0..<taggedList.count-1 {
             var location = taggedList[i].range.location
             let length = taggedList[i].range.length
@@ -224,8 +224,8 @@ extension Tagging {
             let symbolAttributesRange = NSMakeRange(model.range.location, symbol.count)
             let taggedAttributesRange = NSMakeRange(model.range.location+1, model.range.length-1)
             
-            attributedString.addAttributes(symbolAttributes, range: symbolAttributesRange)
-            attributedString.addAttributes(taggedAttributes, range: taggedAttributesRange)
+            attributedString.addAttributes(model.symbolAttribute, range: symbolAttributesRange)
+            attributedString.addAttributes(model.attribute, range: taggedAttributesRange)
         }
         
         textView.attributedText = attributedString
